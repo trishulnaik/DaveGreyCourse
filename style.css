@@ -1,0 +1,99 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* INITIAL */
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    background-color: #8D99AE;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0px 20px 30px
+}
+
+nav ul li a {
+    color: #EDF2F4;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+ 
+header, footer {
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+header h1,footer{
+    font-size: 2rem;
+    padding: 30px;
+}
+/* IDS */
+#hero-section{
+    width: 100%;
+    height: 50vh;
+    color: #EDF2F4;
+    background-image: url(./images/3rago.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section h2{
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #2B2D42;
+    text-transform: uppercase;
+}
+
+/* Generic Classes */
+.text-center{
+    text-align: center;
+}
+.flex-row{
+    display: flex;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+.card-container div{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #EDF2F4;
+    color: #2B2D42;
+}
+.card-container img{
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    outline: 2px solid #2B2D42;
+    outline-offset: 2px;
+    border: 2px solid #2B2D42;
+    margin-bottom: 20px;
+}
+.card-container h2{
+    text-align: center;
+}
