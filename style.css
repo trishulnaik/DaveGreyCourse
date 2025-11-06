@@ -82,7 +82,7 @@ footer {
 
 #hero-section h2 {
     font-size: 2rem;
-    text-shadow: 2px 2px 2px var(--DARK-BORDER);
+    text-shadow: 2px 2px 2px var(--DARK-COLOR);
     text-transform: uppercase;
 }
 
