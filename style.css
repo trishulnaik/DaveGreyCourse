@@ -9,11 +9,15 @@
 
 /* VARIABLES */
 :root {
-    --LIGHT-COLOR: #EDF2F4;
-    --DARK-COLOR: #2B2D42;
-    --DARK-BACKGROUND: #2B2D42;
-    --LIGHT-BACKGROUND: #8D99AE;
-    --DARK-BORDER: 2px solid var(--DARK-COLOR);
+    --LIGHT-COLOR: #F5F5DC;      /* Beige/Cream - Text on Dark BG (Cards/Header Text) */
+    --DARK-COLOR: #2C3E50;       /* Deep Indigo - Text on Light BG / Borders */
+    --DARK-BACKGROUND: #1A2534;  /* Midnight Blue - Header/Footer BG */
+    --LIGHT-BACKGROUND: #2C3E50; /* Deep Indigo - Main Body BG */
+    --ACCENT-COLOR: #F39C12;     /* Vibrant Gold - Recommended for links/buttons */
+    
+    /* Updated Border to use LIGHT-COLOR for contrast in dark mode */
+    --DARK-BORDER: 2px solid var(--DARK-COLOR); 
+    
     scroll-behavior: smooth;
 }
 
@@ -46,7 +50,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: var(--LIGHT-COLOR);
+    color: var(--ACCENT-COLOR);
 }
 
 main {
@@ -98,7 +102,7 @@ footer {
     border-radius: 5px;
     padding: 30px;
     background-color: var(--LIGHT-COLOR);
-    color: var(--DARK-BORDER);
+    color: var(--DARK-COLOR);
 }
 
 .card-container img {
@@ -113,4 +117,19 @@ footer {
 
 .card-container h2 {
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (prefers-color-scheme: light) {
+   :root{
+    /* LIGHT MODE OVERRIDE */
+    
+    /* Invert Colors: Text/Foreground */
+    --DARK-COLOR: #F5F5DC;       /* Beige/Cream (Used on dark elements like cards) */
+    --LIGHT-COLOR: #2C3E50;      /* Deep Indigo (Used for main text/links on light BG) */
+    
+    /* Invert Backgrounds */
+    --LIGHT-BACKGROUND: #F5F5DC; /* Beige/Cream - Main Body BG */
+    --DARK-BACKGROUND: #ECF0F1;  /* Light Gray - Header/Footer BG */
+   }
 }
