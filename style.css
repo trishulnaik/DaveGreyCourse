@@ -125,11 +125,11 @@ footer {
     /* LIGHT MODE OVERRIDE */
     
     /* Invert Colors: Text/Foreground */
-    --DARK-COLOR: #F5F5DC;       /* Beige/Cream (Used on dark elements like cards) */
-    --LIGHT-COLOR: #2C3E50;      /* Deep Indigo (Used for main text/links on light BG) */
+    --LIGHT-COLOR: #F5F5DC;       /* Beige/Cream (Used on dark elements like cards) */
+    --DARK-COLOR: #2C3E50;      /* Deep Indigo (Used for main text/links on light BG) */
     
     /* Invert Backgrounds */
-    --LIGHT-BACKGROUND: #F5F5DC; /* Beige/Cream - Main Body BG */
-    --DARK-BACKGROUND: #ECF0F1;  /* Light Gray - Header/Footer BG */
+    --LIGHT-BACKGROUND: #4e7296; /* Beige/Cream - Main Body BG */
+    --DARK-BACKGROUND: #2C3E50;  /* Light Gray - Header/Footer BG */
    }
 }
